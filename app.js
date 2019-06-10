@@ -14,6 +14,7 @@ app.use(bodyParser.json());
 app.use(logger('dev'));
 
 require('./routes/user')(router);
+require('./routes/buku')(router)
 app.use('/', router);
 
 server.listen(port);
